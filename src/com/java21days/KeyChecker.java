@@ -38,11 +38,12 @@ public class KeyChecker extends JFrame implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent keyEvent) {
-
+        System.out.println("A key was pressed");
+        System.out.println(keyEvent.getExtendedKeyCode());
     }
 
     @Override
     public void keyReleased(KeyEvent keyEvent) {
-
+        System.out.println("A key was released");
     }
 }
