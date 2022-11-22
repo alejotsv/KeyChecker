@@ -32,6 +32,7 @@ public class KeyChecker extends JFrame implements KeyListener {
 
     @Override
     public void keyTyped(KeyEvent keyEvent) {
+        System.out.println(keyEvent.getKeyChar());
         currentSub += keyEvent.getKeyChar();
         subtitle.setText(currentSub);
     }
